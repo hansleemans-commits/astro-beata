@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astro-Beata | Astrologie voor relaties, geluk en werk — Hilversum</title>
+  <meta name="description" content="Beata van Etten — erkend astroloog (AVN · ASAS · Aquarius) in Hilversum. Persoonlijke sessies, workshops en lezingen. Praktische astrologie voor relaties, welzijn en loopbaan. Online en in de praktijk.">
+  <meta name="keywords" content="astroloog hilversum, astroloog loosdrecht, astrologie sessie, geboortehoroscoop, relatiehoroscoop, astrologie workshop, erkend astroloog AVN">
+  <link rel="canonical" href="https://www.astro-beata.nl/">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVIGATIE -->
+<nav class="nav" role="navigation" aria-label="Hoofdnavigatie">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Astro-Beata startpagina">
+      <div class="nav-logo-ster">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+        </svg>
+      </div>
+      <div class="nav-logo-tekst">
+        <span class="nav-logo-naam">Astro-Beata</span>
+        <span class="nav-logo-sub">Erkend Astroloog · AVN · ASAS · Aquarius</span>
+      </div>
+    </a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="over-beata.html">Over Beata</a></li>
+      <li><a href="aanbod.html">Aanbod</a></li>
+      <li><a href="workshops.html">Workshops & Lezingen</a></li>
+      <li><a href="contact.html" class="nav-cta">Maak een afspraak</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-sterren">
+    <canvas style="width:100%;height:100%;position:absolute;inset:0;"></canvas>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-tekst">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+        Erkend lid AVN · ASAS · Aquarius · Hilversum / Loosdrecht
+      </div>
+      <h1>Jouw sterrenkaart als <span class="uitgelicht">kompas</span> voor relaties, geluk en werk</h1>
+      <p class="hero-ondertitel">Praktische astrologie met therapeutische diepgang. Geen zweverig gedoe — maar echte inzichten die je leven concreet veranderen.</p>
+      <div class="hero-knop-rij">
+        <a href="contact.html" class="knop knop--primair knop--groot">Maak een afspraak</a>
+        <a href="aanbod.html" class="knop knop--omlijnd-wit knop--groot">Bekijk het aanbod</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-getal">25+</div>
+          <div class="hero-stat-label">jaar therapeutische ervaring</div>
+        </div>
+        <div>
+          <div class="hero-stat-getal">5</div>
+          <div class="hero-stat-label">jaar astrologieopleiding</div>
+        </div>
+        <div>
+          <div class="hero-stat-getal">AVN</div>
+          <div class="hero-stat-label">gediplomeerd astroloog</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-afbeelding">
+      <svg class="hero-cirkel" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Buitenste ring -->
+        <circle cx="190" cy="190" r="180" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+        <circle cx="190" cy="190" r="155" stroke="rgba(201,168,76,0.25)" stroke-width="1" stroke-dasharray="4 6"/>
+        <circle cx="190" cy="190" r="130" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <!-- Sterrenbeelden stippen -->
+        <circle cx="190" cy="10" r="3" fill="rgba(201,168,76,0.6)"/>
+        <circle cx="370" cy="190" r="3" fill="rgba(201,168,76,0.6)"/>
+        <circle cx="190" cy="370" r="3" fill="rgba(201,168,76,0.6)"/>
+        <circle cx="10" cy="190" r="3" fill="rgba(201,168,76,0.6)"/>
+        <circle cx="317" cy="63" r="2" fill="rgba(255,255,255,0.4)"/>
+        <circle cx="317" cy="317" r="2" fill="rgba(255,255,255,0.4)"/>
+        <circle cx="63" cy="317" r="2" fill="rgba(255,255,255,0.4)"/>
+        <circle cx="63" cy="63" r="2" fill="rgba(255,255,255,0.4)"/>
+        <!-- Kruis assen -->
+        <line x1="190" y1="35" x2="190" y2="345" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <line x1="35" y1="190" x2="345" y2="190" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <!-- Horoscoop-driehoeken -->
+        <polygon points="190,50 310,260 70,260" stroke="rgba(201,168,76,0.2)" stroke-width="1" fill="none"/>
+        <polygon points="190,330 70,120 310,120" stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none"/>
+        <!-- Centraal symbool -->
+        <circle cx="190" cy="190" r="60" fill="rgba(30,61,110,0.6)" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+        <circle cx="190" cy="190" r="44" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <!-- Zon symbool in midden -->
+        <circle cx="190" cy="190" r="18" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="1.5"/>
+        <circle cx="190" cy="190" r="5" fill="rgba(201,168,76,0.8)"/>
+        <!-- Zonnestralen -->
+        <line x1="190" y1="165" x2="190" y2="158" stroke="rgba(201,168,76,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="190" y1="215" x2="190" y2="222" stroke="rgba(201,168,76,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="165" y1="190" x2="158" y2="190" stroke="rgba(201,168,76,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="215" y1="190" x2="222" y2="190" stroke="rgba(201,168,76,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- Kleine sterren -->
+        <circle cx="100" cy="80" r="2" fill="rgba(255,255,255,0.5)"/>
+        <circle cx="280" cy="80" r="1.5" fill="rgba(255,255,255,0.4)"/>
+        <circle cx="80" cy="280" r="2" fill="rgba(255,255,255,0.4)"/>
+        <circle cx="300" cy="280" r="1.5" fill="rgba(255,255,255,0.5)"/>
+        <circle cx="150" cy="50" r="1.5" fill="rgba(201,168,76,0.5)"/>
+        <circle cx="230" cy="330" r="1.5" fill="rgba(201,168,76,0.5)"/>
+        <circle cx="50" cy="150" r="1.5" fill="rgba(201,168,76,0.5)"/>
+        <circle cx="330" cy="230" r="1.5" fill="rgba(201,168,76,0.5)"/>
+        <!-- Dierenriemtekens als tekst -->
+        <text x="184" y="26" font-size="11" fill="rgba(255,255,255,0.5)" font-family="serif">♈</text>
+        <text x="184" y="368" font-size="11" fill="rgba(255,255,255,0.5)" font-family="serif">♎</text>
+        <text x="357" y="195" font-size="11" fill="rgba(255,255,255,0.5)" font-family="serif">♋</text>
+        <text x="15" y="195" font-size="11" fill="rgba(255,255,255,0.5)" font-family="serif">♑</text>
+        <text x="120" y="175" font-size="9" fill="rgba(201,168,76,0.4)" font-family="sans-serif" letter-spacing="1">ASTROLOGIE</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- WAAROM ASTROLOGIE (kernboodschap) -->
+<section class="sectie sectie--wit">
+  <div class="container">
+    <div class="sectie-header animeer">
+      <p class="subtitel">Mijn aanpak</p>
+      <h2>Astrologie die echt iets voor je doet</h2>
+      <p>Geen voorspellingen over de toekomst, maar inzicht in wie je bent — en hoe je jouw leven kunt leven op de manier die bij jou past. Met meer dan 25 jaar therapeutische ervaring verbind ik de wijsheid van de sterren met praktische begeleiding.</p>
+    </div>
+    <div class="raster-3">
+      <div class="kaart animeer">
+        <div class="kaart-icoon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </div>
+        <h3>Relaties & verbinding</h3>
+        <p>Begrijp de dynamiek in je relaties — romantisch, familiair of professioneel. Ontdek patronen en kom tot diepere verbinding met de mensen die er toe doen.</p>
+        <a href="aanbod.html#relatie" class="kaart-link">
+          Meer over relatiehoroscoop
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="kaart animeer">
+        <div class="kaart-icoon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <h3>Geluk & welzijn</h3>
+        <p>Wat geeft jou echt energie? Jouw horoscoop onthult je aangeboren krachten, kwaliteiten en de gebieden in je leven waar jij kunt oplichten.</p>
+        <a href="aanbod.html#geboorte" class="kaart-link">
+          Meer over geboortehoroscoop
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="kaart animeer">
+        <div class="kaart-icoon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M8.5 17a5 5 0 0 1 7 0"/>
+          </svg>
+        </div>
+        <h3>Levensfasen & spirituele groei</h3>
+        <p>In welke fase van je leven zit je? Welke zielopdracht draag jij met je mee? Ontdek de diepere lagen van je horoscoop en de cycli die nu actief zijn.</p>
+        <a href="aanbod.html#ontwikkelingsfasen" class="kaart-link">
+          Meer over levensfasen & spiritueel
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVER BEATA (teaser) -->
+<section class="sectie sectie--blauw-licht">
+  <div class="container">
+    <div class="raster-2">
+      <div class="over-foto-kader animeer">
+        <div class="over-foto-placeholder">
+          <svg class="over-foto-icoon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="animeer">
+        <div class="avn-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          Erkend lid · Astrologische Vakvereniging Nederland (AVN)
+        </div>
+        <p class="subtitel">Over Beata</p>
+        <h2>Van therapeut naar astroloog — een reis van meer dan 25 jaar</h2>
+        <p>Mijn passie voor de mens begon meer dan 20 jaar geleden in de alternatieve geneeskunde. Na tientallen jaren werken met mensen in hun kwetsbaarheid, vond ik in astrologie een bijzonder instrument: een taal die beschrijft wie jij bent, hoe jij in het leven staat en wat jou beweegt.</p>
+        <p>Na een gedegen opleiding tot gediplomeerd astroloog ben ik nu erkend lid van de AVN. Mijn therapeutische achtergrond maakt het verschil: ik werk niet met voorspellingen, maar met inzicht, herkenning en groei.</p>
+        <div class="knop-rij mt-2">
+          <a href="over-beata.html" class="knop knop--primair">Lees mijn verhaal</a>
+          <a href="contact.html" class="knop knop--omlijnd">Plan een gesprek</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WERKWIJZE -->
+<section class="sectie sectie--wit">
+  <div class="container">
+    <div class="raster-2">
+      <div class="animeer">
+        <p class="subtitel">Zo werken we samen</p>
+        <h2>Van sterrenkaart naar persoonlijk inzicht</h2>
+        <p>In elke sessie staat jouw verhaal centraal. De horoscoop is het startpunt — jij bent het gesprek. Met mijn achtergrond als therapeut hoor ik niet alleen wat je zegt, maar ook wat er onder de woorden ligt.</p>
+        <div class="mt-2">
+          <div class="aanpak-stap">
+            <div class="aanpak-nummer">1</div>
+            <div class="aanpak-inhoud">
+              <h4>Inschrijven</h4>
+              <p>Je schrijft je in voor een sessie en kunt vooraf 3 tot maximaal 5 vragen insturen, zodat ik mij goed kan voorbereiden.</p>
+            </div>
+          </div>
+          <div class="aanpak-stap">
+            <div class="aanpak-nummer">2</div>
+            <div class="aanpak-inhoud">
+              <h4>Voorbereiding & verdieping</h4>
+              <p>Ik bereid jouw horoscoop zorgvuldig voor — met aandacht voor de thema's die op dit moment in jouw leven spelen.</p>
+            </div>
+          </div>
+          <div class="aanpak-stap">
+            <div class="aanpak-nummer">3</div>
+            <div class="aanpak-inhoud">
+              <h4>Persoonlijke sessie</h4>
+              <p>Een diepgaand gesprek van 75–90 minuten, in Loosdrecht of via Zoom. Je mag zelf opnames maken tijdens de sessie.</p>
+            </div>
+          </div>
+          <div class="aanpak-stap">
+            <div class="aanpak-nummer">4</div>
+            <div class="aanpak-inhoud">
+              <h4>Vervolg op jouw tempo</h4>
+              <p>Eén sessie kan al veel in beweging zetten. Verdere begeleiding is altijd mogelijk, nooit verplicht.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animeer">
+        <p class="subtitel">Aanbod in één oogopslag</p>
+        <h2>Kies wat bij jou past</h2>
+        <div style="display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem;">
+          <a href="aanbod.html#geboorte" style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--blauw-licht);border-radius:10px;text-decoration:none;transition:background 0.3s;">
+            <span style="font-size:1.4rem;">⭐</span>
+            <div>
+              <strong style="color:var(--blauw-diep);display:block;">Geboortehoroscoop</strong>
+              <span style="font-size:0.85rem;color:var(--tekst-licht);">Wie ben je? Wat zijn jouw krachten?</span>
+            </div>
+          </a>
+          <a href="aanbod.html#relatie" style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--blauw-licht);border-radius:10px;text-decoration:none;transition:background 0.3s;">
+            <span style="font-size:1.4rem;">♥</span>
+            <div>
+              <strong style="color:var(--blauw-diep);display:block;">Relatiehoroscoop</strong>
+              <span style="font-size:0.85rem;color:var(--tekst-licht);">Begrijp je partner, familie of collega's</span>
+            </div>
+          </a>
+          <a href="aanbod.html#ontwikkelingsfasen" style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--blauw-licht);border-radius:10px;text-decoration:none;transition:background 0.3s;">
+            <span style="font-size:1.4rem;">🌱</span>
+            <div>
+              <strong style="color:var(--blauw-diep);display:block;">Ontwikkelingsfasen & levenscyclus</strong>
+              <span style="font-size:0.85rem;color:var(--tekst-licht);">Welke fase van je leven ben je nu in?</span>
+            </div>
+          </a>
+          <a href="aanbod.html#spiritueel" style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--blauw-licht);border-radius:10px;text-decoration:none;transition:background 0.3s;">
+            <span style="font-size:1.4rem;">✨</span>
+            <div>
+              <strong style="color:var(--blauw-diep);display:block;">Spirituele horoscoop</strong>
+              <span style="font-size:0.85rem;color:var(--tekst-licht);">Jouw zielopdracht en spirituele groei</span>
+            </div>
+          </a>
+          <a href="aanbod.html#jaar" style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--blauw-licht);border-radius:10px;text-decoration:none;transition:background 0.3s;">
+            <span style="font-size:1.4rem;">🌀</span>
+            <div>
+              <strong style="color:var(--blauw-diep);display:block;">Jaarhoroscoop</strong>
+              <span style="font-size:0.85rem;color:var(--tekst-licht);">Thema's en kansen voor het komende jaar</span>
+            </div>
+          </a>
+          <a href="workshops.html" style="display:flex;align-items:center;gap:1rem;padding:1.25rem;background:var(--blauw-licht);border-radius:10px;text-decoration:none;transition:background 0.3s;">
+            <span style="font-size:1.4rem;">🌟</span>
+            <div>
+              <strong style="color:var(--blauw-diep);display:block;">Workshops & lezingen</strong>
+              <span style="font-size:0.85rem;color:var(--tekst-licht);">Ontdek astrologie in een groep</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sectie sectie--blauw-licht">
+  <div class="container">
+    <div class="sectie-header animeer">
+      <p class="subtitel">Ervaringen</p>
+      <h2>Wat anderen zeggen</h2>
+    </div>
+    <div class="raster-3">
+      <div class="testimonial-kaart animeer">
+        <div class="testimonial-quote">"</div>
+        <div class="sterren">★★★★★</div>
+        <p class="testimonial-tekst">Beata heeft een prachtige manier om astrologie te verbinden met echte levensvragen. Na onze sessie over mijn relatie zag ik dingen die ik al jaren niet meer kon zien. Heel verhelderend en warm.</p>
+        <div class="testimonial-naam">Marieke, 42</div>
+        <div class="testimonial-ondertitel">Relatieconsultatie, Amsterdam</div>
+      </div>
+      <div class="testimonial-kaart animeer">
+        <div class="testimonial-quote">"</div>
+        <div class="sterren">★★★★★</div>
+        <p class="testimonial-tekst">Ik was sceptisch — maar de manier waarop Beata mijn horoscoop verbond aan mijn loopbaanvraag was verbluffend concreet. Geen zweverig verhaal, maar echte handvatten die ik nu dagelijks gebruik.</p>
+        <div class="testimonial-naam">Thomas, 38</div>
+        <div class="testimonial-ondertitel">Loopbaanconsultatie, Utrecht</div>
+      </div>
+      <div class="testimonial-kaart animeer">
+        <div class="testimonial-quote">"</div>
+        <div class="sterren">★★★★★</div>
+        <p class="testimonial-tekst">De workshop bij Beata was een openbaring. Ik wist bijna niets van astrologie, maar in één middag begreep ik al zoveel meer van mezelf. Ze maakt het toegankelijk en heel persoonlijk.</p>
+        <div class="testimonial-naam">Sandra, 55</div>
+        <div class="testimonial-ondertitel">Workshop astrologie, Hilversum</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKSHOPS TEASER -->
+<section class="sectie sectie--wit">
+  <div class="container">
+    <div class="sectie-header animeer">
+      <p class="subtitel">Workshops & Lezingen</p>
+      <h2>Ontdek astrologie in de groep</h2>
+      <p>Een lezing of workshop is een laagdrempelige kennismaking — voor nieuwkomers én mensen die al meer weten. Inspirerend, interactief en altijd persoonlijk van toon.</p>
+    </div>
+    <div class="raster-2">
+      <div class="workshop-kaart animeer">
+        <div class="workshop-header">
+          <span class="workshop-tag">Workshop</span>
+          <h3>Ontdek je sterrenkaart</h3>
+          <p style="color:rgba(255,255,255,0.8);font-size:0.9rem;margin:0;">Leer de basis van astrologie aan de hand van jouw eigen horoscoop. Praktisch, persoonlijk en toegankelijk.</p>
+        </div>
+        <div class="workshop-body">
+          <div class="workshop-meta">
+            <span class="workshop-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+              3–4 uur
+            </span>
+            <span class="workshop-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Max. 12 deelnemers
+            </span>
+            <span class="workshop-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Hilversum / online
+            </span>
+          </div>
+          <a href="workshops.html" class="knop knop--primair" style="width:100%;margin-top:0.5rem;">Meer over workshops</a>
+        </div>
+      </div>
+      <div class="workshop-kaart animeer">
+        <div class="workshop-header" style="background:linear-gradient(135deg,#2a4a80,#3D6AB5);">
+          <span class="workshop-tag">Lezing</span>
+          <h3>Astrologie voor verenigingen & bedrijven</h3>
+          <p style="color:rgba(255,255,255,0.8);font-size:0.9rem;margin:0;">Een boeiende avond over astrologie — op maat voor uw groep. Inspirerend en toegankelijk voor iedereen.</p>
+        </div>
+        <div class="workshop-body">
+          <div class="workshop-meta">
+            <span class="workshop-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+              1.5–2 uur
+            </span>
+            <span class="workshop-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              Elke groepsgrootte
+            </span>
+            <span class="workshop-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Bij u of online
+            </span>
+          </div>
+          <a href="contact.html" class="knop knop--omlijnd" style="width:100%;margin-top:0.5rem;">Vraag een lezing aan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container">
+    <p class="subtitel" style="color:var(--goud-licht);">Klaar voor meer inzicht?</p>
+    <h2>Ontdek wat de sterren over jou zeggen</h2>
+    <p>Schrijf je in voor een sessie en stuur vooraf jouw vragen in — zodat ik mij goed kan voorbereiden en de sessie optimaal op jou is afgestemd.</p>
+    <div class="knop-rij">
+      <a href="contact.html" class="knop knop--primair knop--groot">Maak een afspraak</a>
+      <a href="aanbod.html" class="knop knop--omlijnd-wit">Bekijk alle diensten</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo-naam">Astro-Beata</div>
+        <p class="footer-omschrijving">Beata van Etten — erkend astroloog (AVN · ASAS · Aquarius) gevestigd in Hilversum / Loosdrecht. Persoonlijke sessies, workshops en lezingen met een therapeutische blik op astrologie.</p>
+        <div class="footer-avn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Erkend lid AVN · ASAS · Aquarius
+        </div>
+      </div>
+      <div>
+        <h4>Navigatie</h4>
+        <ul class="footer-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="over-beata.html">Over Beata</a></li>
+          <li><a href="aanbod.html">Aanbod</a></li>
+          <li><a href="workshops.html">Workshops & Lezingen</a></li>
+          <li><a href="contact.html">Contact & Afspraken</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Diensten</h4>
+        <ul class="footer-menu">
+          <li><a href="aanbod.html#geboorte">Geboortehoroscoop</a></li>
+          <li><a href="aanbod.html#relatie">Relatiehoroscoop</a></li>
+          <li><a href="aanbod.html#ontwikkelingsfasen">Ontwikkelingsfasen & levenscyclus</a></li>
+          <li><a href="aanbod.html#spiritueel">Spirituele horoscoop</a></li>
+          <li><a href="aanbod.html#jaar">Jaarhoroscoop</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="workshops.html#lezingen">Lezingen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-menu">
+          <li><a href="mailto:info@astro-beata.nl">info@astro-beata.nl</a></li>
+          <li><a href="tel:+31643101617">06 – 43 10 16 17</a></li>
+          <li><a href="#">Hilversum / Loosdrecht</a></li>
+          <li><a href="#">Ook via Zoom</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Astro-Beata.nl · Beata van Etten · KVK: 00000000</span>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="#">Privacybeleid</a>
+        <a href="#">Algemene voorwaarden</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
