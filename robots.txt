@@ -39,4 +39,4 @@ User-agent: CCBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.astro-beata.nl/sitemap.xml
+Sitemap: https://astro-beata.nl/sitemap.xml
