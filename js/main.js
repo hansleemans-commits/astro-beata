@@ -69,19 +69,36 @@ document.addEventListener('DOMContentLoaded', function () {
   // === CONTACTFORMULIER ===
   const form = document.getElementById('contact-formulier');
   if (form) {
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', async function (e) {
       e.preventDefault();
       const knop = form.querySelector('button[type="submit"]');
       const origineel = knop.textContent;
       knop.textContent = 'Verzenden...';
       knop.disabled = true;
 
-      // Simuleer verzending (vervang met echte integratie)
-      setTimeout(() => {
+      const data = Object.fromEntries(new FormData(form).entries());
+      data.akkoord = form.querySelector('input[name="akkoord"]').checked;
+
+      try {
+        const respons = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+
+        if (!respons.ok) {
+          const fout = await respons.json().catch(() => ({}));
+          throw new Error(fout.error || 'Verzenden mislukt.');
+        }
+
         form.style.display = 'none';
         const succes = document.getElementById('formulier-succes');
         if (succes) succes.style.display = 'block';
-      }, 1200);
+      } catch (err) {
+        alert('Er ging iets mis bij het verzenden: ' + err.message + '\n\nProbeer het later opnieuw of mail rechtstreeks naar info@astro-beata.nl.');
+        knop.textContent = origineel;
+        knop.disabled = false;
+      }
     });
   }
 
