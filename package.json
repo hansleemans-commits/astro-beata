@@ -2,6 +2,9 @@
   "name": "astro-beata",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "indexnow": "node scripts/indexnow.mjs"
+  },
   "dependencies": {
     "resend": "^4.0.0"
   }
